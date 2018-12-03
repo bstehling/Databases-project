@@ -1,5 +1,10 @@
 # Display all recipes associated with a user 
 
-SELECT u.u_id, r.rname, u.r_id from recipe r, users u
-WHERE u.r_id = r.r_id;
-
+SELECT 
+    r.r_id, r.rname, u.name
+FROM
+    user u,
+    recipe r
+WHERE
+    r.u_id = u.u_id AND u.name = 'Brandon';
+    

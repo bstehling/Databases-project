@@ -9,16 +9,20 @@ values ('Chicken Noodle Soup test', 30, 'This is a test recipe for chicken noodl
 insert into recipe (rname, time, ins, lunch, dinner) 
 values ('Sausage Casserole', 30, 'This is a test recipe for Sausage Casserole', 1,1);
 
-insert into recipe (rname, time, ins, breakfast, r_id) 
-values ('Scrambled Eggs', 10, 'how to make scrambled eggs.....', 1,1);
+insert into recipe (rname, time, ins, breakfast, u_id) 
+values ('Boiled Egg', 10, 'how to boil egg....', 1,1);
 
 insert into ingList (r_id, i_id)
 values (1,4);
 
-insert into users (uname, u_id, r_id)
-values('Sean', 1, 1);
+insert into user (name)
+values('Sean');
+
+update recipe
+SET u_id = 1
+WHERE  r_id = 2;
 
 SELECT 
     *
 FROM
-    ingList;
+    recipe;
