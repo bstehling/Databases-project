@@ -4,10 +4,9 @@ CREATE DATABASE RecipeMgr;
 USE RecipeMgr;
 
 #table creation
-CREATE TABLE users (
-    u_id INT,
-    r_id INT,
-    uname VARCHAR(20)
+CREATE TABLE user (
+    u_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY ,
+    name VARCHAR(50)
 );
 
 CREATE TABLE ingList (
@@ -16,10 +15,10 @@ CREATE TABLE ingList (
     PRIMARY KEY (r_id , i_id)
 );
 
-CREATE TABLE grocList (
-	u_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    i_id INT
-);
+#CREATE TABLE grocList (
+#	u_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+#    i_id INT
+#);
 
 CREATE TABLE ing (
     i_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
