@@ -1,6 +1,7 @@
 #create db
 CREATE DATABASE RecipeMgr;
 
+
 USE RecipeMgr;
 
 #table creation
