@@ -18,6 +18,9 @@ values (1,4);
 insert into user (name)
 values('Sean');
 
+insert into user (name)
+values('Brandon');
+
 update recipe
 SET u_id = 1
 WHERE  r_id = 2;
