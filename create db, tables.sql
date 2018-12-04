@@ -1,6 +1,8 @@
 #create db
 CREATE DATABASE RecipeMgr;
 
+/*I would rather be having sex*/
+
 USE RecipeMgr;
 
 #table creation
