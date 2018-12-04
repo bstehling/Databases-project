@@ -1,7 +1,10 @@
 #create db
 CREATE DATABASE RecipeMgr;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 72924aa... Update create db, tables.sql
 USE RecipeMgr;
 
 #table creation
