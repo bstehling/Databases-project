@@ -1,5 +1,7 @@
 #alter table to add foreign key
 
+SELECT * FROM recipe;
+
 ALTER TABLE `recipemgr`.`recipe` 
 ADD CONSTRAINT `fkUserRecipe`
   FOREIGN KEY (`u_id`)
